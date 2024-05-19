@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.js"
+        integrity="sha512-bUju8VkXhCQgW7zCHSdiIDpECo/lqzChkKrKoc1v2PL2XqO/0Q2Y8dhu07+q6Rk+1c1xr6cfE0VZnumgwy93Ig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon"
+        href="https://demo.casethemes.net/unfinityplus/wp-content/themes/unfinityplus/assets/images/favicon.png"
+        type="image/x-icon">
+    <!-- https://demo.casethemes.net/unfinityplus/ -->
+    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden w-full">
+    <nav class=" h-24 bg-[#000] top-0 fixed z-40   border-gray-200 dark:bg-gray-900 w-full">
+        <div
+            class="max-w-screen-xl h-full flex flex-wrap items-center justify-between mx-auto p-2 sm:p-0 sm:w-11/12 relative">
+            <a href="#" class="flex items-center space-x-3 absolute top-11  rtl:space-x-reverse w-36 ">
+                <img src="https://demo.casethemes.net/unfinityplus/wp-content/themes/unfinityplus/assets/images/logo-light.png"
+                    class="w-full mx-auto" alt="Flowbite Logo" />
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center  w-10 h-10  justify-center absolute top-8 right-0 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full absolute inset-y-1/2 top-full md:top-9 right-0 md:block md:w-auto md:mt-0 "
+                id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 drop-shadow-md bg-white md:bg-black md:p-0 mt-4 md:flex-row md:space-x-5 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li class="md:order-[1] order-[2]">
+                        <a href="#home"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-300 md:p-0 dark:text-white md:dark:text-blue-500">Home</a>
+                    </li>
+                    <li class="md:order-[2] order-[3]">
+                        <a href="#Services"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                    </li>
+                    <li class="md:order-[3] order-[4]">
+                        <a href="#About"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <li class="md:order-[4] order-[5]">
+                        <a href="#projects"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">projects</a>
+                    </li>
+                    <li class="md:order-[5] order-[6]">
+                        <a href="#testimonials"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">testimonials</a>
+                    </li>
+                    <li class="md:order-[6] order-[7]">
+                        <a href="./blog.html"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">blog</a>
+                    </li>
+                    <li class="md:order-[7] order-[8]">
+                        <a href="#contact"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">contact</a>
+                    </li>
+                    <li class="md:order-[8] order-[9]">
+                        <a href="./shop.html"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">shop</a>
+                    </li>
+                    <li class="md:order-[9] order-[1]">
+                        <div class="relative">
+                            <button id="toggleButton" class="md:block hidden   text-white font-bold">
+                                <i class="md:hover:text-gray-300 fas fa-search"></i>
+                            </button>
+                            <input type="text"
+                                class="h-8 pl-2 w-full md:w-52 md:hidden  block md:mb-0 mb-2 md:absolute top-full right-0 border-2"
+                                placeholder="search..." id="elementToToggle">
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="w-full" id="home">
+        <div class="swiper mySwiper h-[800px]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide relative bg-fixed flex justify-center bg-cover"
+                    style="background-image: url('https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/bg-slider1.jpg')">
+                    <div
+                        class="absolute  top-[25%] p-10 text-white text-white left-auto  sm:left-44 w-[70%] sm:w-[450px] bg-black bg-opacity-80 ">
+                        <div class="w-full font-bold text-5xl">
+                            Take your business to the next level
+                        </div>
+                        <div class="w-full mt-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, laborum, vitae enim
+                            molestiae aspernatur voluptas ducimus commodi architecto repellendus, dolorum quas!
+                            Assumenda atque quas dolor? Repudiandae aliquid sit quos? Soluta.
+                        </div>
+                        <div class="w-2/3 flex justify-between items-center mt-10">
+                            <hr size="10px" class="w-7/12 h-[2px] bg-white" />
+                            <div class="text-[#A2857D] font-bold text-xl">About us</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-fixed relative bg-cover flex justify-center"
+                    style="background-image:url(https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/bg-slider2.jpg);">
+                    <div
+                        class="absolute  top-[25%] p-10 text-white text-white left-auto  sm:left-44 w-[70%] sm:w-[450px] bg-black bg-opacity-80 ">
+                        <div class="w-full font-bold text-5xl">
+                            we are your financial solution
+                        </div>
+                        <div class="w-full mt-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, laborum, vitae enim
+                            molestiae aspernatur voluptas ducimus commodi architecto repellendus, dolorum quas!
+                            Assumenda atque quas dolor? Repudiandae aliquid sit quos? Soluta.
+                        </div>
+                        <div class="w-2/3 flex justify-between items-center mt-10">
+                            <hr size="10px" class="w-7/12 h-[2px] bg-white" />
+                            <div class="text-[#A2857D] font-bold text-xl">Services</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <div class="w-full p-11" id="Services"></div>
+    <section class="w-full">
+        <div class="w-10/12 max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 flex flex-col">
+            <div class="p-5 flex items-center flex-col" data-aos="fade-up" data-aos-duration="1500">
+                <div class=" w-16 h-16 bg-[#b09991] rounded-md flex justify-center items-center drop-shadow-md">
+                    <i class="fa-brands fa-windows text-4xl text-white"></i>
+                </div>
+                <div class="font-bold text-xl mt-3"> App Design</div>
+                <div class="text-gray-500 text-center mt-2"> Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                    corporis suscipit.</div>
+            </div>
+            <div class="p-5 flex items-center flex-col" data-aos="fade-up" data-aos-duration="1500">
+                <div class=" w-16 h-16 bg-[#b09991] rounded-md flex justify-center items-center drop-shadow-md">
+                    <i class="fa-regular fa-address-card text-4xl text-white"></i>
+                </div>
+                <div class="font-bold text-xl mt-5"> Web Design</div>
+                <div class="text-gray-500 text-center mt-2"> Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                    corporis suscipit. </div>
+            </div>
+            <div class="p-5 flex items-center flex-col" data-aos="fade-up" data-aos-duration="1500">
+                <div class=" w-16 h-16 bg-[#b09991] rounded-md flex justify-center items-center drop-shadow-md">
+                    <i class="fa-solid fa-laptop-code text-4xl text-white"></i>
+                </div>
+                <div class="font-bold text-xl mt-3"> Web Development</div>
+                <div class="text-gray-500 text-center mt-2"> Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                    corporis suscipit.</div>
+            </div>
+            <div class="p-5 flex items-center flex-col" data-aos="fade-up" data-aos-duration="1500">
+                <div class=" w-16 h-16 bg-[#b09991] rounded-md flex justify-center items-center drop-shadow-md">
+                    <i class="fa-brands fa-space-awesome text-4xl text-white"></i>
+                </div>
+                <div class="font-bold text-xl mt-3"> Brand Promotion</div>
+                <div class="text-gray-500 text-center mt-2"> Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                    corporis suscipit.</div>
+            </div>
+        </div>
+    </section>
+    <div class="w-full p-11" id="About"></div>
+    <section class="w-full bg-[#f5f5f5]  pb-32">
+        <div class="w-11/12 max-w-screen-xl mx-auto flex flex-wrap ">
+            <div class="w-full md:w-8/12 w-full p-3 pr-14" data-aos="fade-right" data-aos-duration="1500"  data-aos-delay="500">
+                <div>
+                    <div class="w-full text-3xl ">"If you want to build something big, you have to start with a small
+                        step!"</div>
+                    <div class="w-full text-xl mt-5">Perspiciatis unde omnis iste natus error sit volupta tem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                        voluptas sit asper natur aut odit aut fugit, sed quia consequuntur magni dolores.</div>
+                    <div class="justify-around w-full flex bg-white rounded-xl mt-10">
+                        <div class="flex justify-center w-3/12">
+                            <div class="mt-5">
+                                <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/counter-icon1.png"
+                                    alt="">
+                            </div>
+                            <div class="p-3">
+                                <div class="text-3xl font-extrabold">1458</div>
+                                <div> Projects Completed</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center w-3/12">
+                            <div class="mt-5">
+                                <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/counter-icon2.png"
+                                    alt="">
+                            </div>
+                            <div class="p-3">
+                                <div class="text-3xl font-extrabold">1458</div>
+                                <div> Projects Completed</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center w-3/12">
+                            <div class="mt-5">
+                                <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/counter-icon3.png"
+                                    alt="">
+                            </div>
+                            <div class="p-3">
+                                <div class="text-3xl font-extrabold">1458</div>
+                                <div> Projects Completed</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-4/12 w-full p-5"  data-aos="fade-left" data-aos-duration="1500"  data-aos-delay="700">
+                <div>
+                    <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/about1.jpg"
+                        class="w-full" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full h-56 relative" style="background-color: rgba(0, 0, 0, 0.9);">
+        <div class="w-full h-full  brightness-[.3]"
+            style="background-image: url(https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/parallax2.jpg);">
+        </div>
+        <div class="text-4xl flex justify-center absolute top-0 items-center text-white font-bold h-full w-full"  data-aos="fade-left" data-aos-duration="500"  data-aos-delay="300">
+            Find out more about what we do
+        </div>
+    </section>
+    <section>
+        <div class="w-11/12  mx-auto max-w-screen-xl mt-20 mb-20">
+            <div class="w-full flex flex-wrap">
+                <div class="w-full md:w-6/12 p-3" data-aos="fade-right"  data-aos-delay="300"  data-aos-duration="1500">
+                    <div class="w-[90%] mx-auto">
+                        <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/bg-video.jpg"
+                            class="w-full rounded-2xl" alt="">
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 p-3"  data-aos="fade-left"   data-aos-delay="300"  data-aos-duration="1500">
+                    <div>
+                        <div class="text-4xl font-bold mt-5">
+                            Growth over years
+                        </div>
+                        <div class="text-black opacity-[.8] mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris.</div>
+                        <div class="w-[90%] mx-auto mt-4 ">
+                            <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/business-statistics.jpg"
+                                class="w-full" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="w-full flex flex-wrap ">
+            <div class="lg:w-1/3 w-full max-h-[454px]">
+                <div
+                    class="w-full h-full p-[14%] group relative bg-cover bg-[url('https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/box1.jpg')]">
+                    <div
+                        class="child1 transition-all duration-[.4s] absolute group-hover:opacity-80 top-0 left-0 w-full h-full bg-[#b09991]">
+                    </div>
+                    <div class="w-full relative z-10"   data-aos-delay="300"  data-aos-duration="1000"data-aos="fade-up">
+                        <div class="text-white font-bold text-4xl">
+                            Web development for clients
+                            <br />
+                            and market
+                        </div>
+                        <div class="text-white mt-7">
+                            After all, as described in Web Design Trends 2015 & 2016 years, vision dominates a lot of
+                            our subconscious interpretation of the world around images create a better user experience.
+                        </div>
+                        <div class="mt-7 flex">
+                            <button class="p-2 px-9 bg-[#443f45] text-white font-bold">Contact</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/3 w-full max-h-[454px]">
+                <div
+                    class="w-full h-full p-[14%] group relative bg-cover bg-[url('https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/box2.jpg')]">
+                    <div
+                        class="child1 transition-all duration-[.4s] absolute group-hover:opacity-80 top-0 left-0 w-full h-full bg-[#443f45]">
+                    </div>
+                    <div class="w-full relative z-10"  data-aos-delay="300"  data-aos-duration="1000"data-aos="fade-up">
+                        <div class="text-white font-bold text-4xl">
+                            Brand creation, trend analysis & style consulting
+                        </div>
+                        <div class="text-white mt-7">
+                            Rounding up a bunch of specific designs & talking about the merits of each is the perfect
+                            way to find common ground. Collecting a wide samples is a great way to start your project.
+                        </div>
+                        <div class="mt-7 flex">
+                            <button class="p-2 px-9 bg-[#b09991] text-white font-bold">Contact</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/3 w-full max-h-[454px]">
+                <div
+                    class="w-full h-full p-[14%] group relative bg-cover bg-[url('https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/box3.jpg')]">
+                    <div
+                        class="child1 transition-all duration-[.4s] absolute group-hover:opacity-80 top-0 left-0 w-full h-full bg-[#b09991]">
+                    </div>
+                    <div class="w-full relative z-10"  data-aos-delay="300"  data-aos-duration="1000"data-aos="fade-up">
+                        <div class="text-white font-bold text-4xl">
+                            Product promotion,
+                            <br />
+                            advertising & SEO
+                        </div>
+                        <div class="text-white mt-7">
+                            After all, as described in Web Design Trends 2015 & 2016 years, vision dominates a lot of
+                            our subconscious interpretation of the world around images create a better user experience.
+                        </div>
+                        <div class="mt-7 flex">
+                            <button class="p-2 px-9 bg-[#443f45] text-white font-bold">Contact</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="w-11/12 mx-auto max-w-screen-xl mt-20 mb-20">
+            <div class="w-full font-bold text-4xl text-center" data-aos="zoom-in"  data-aos-duration="1500"> Our Team</div>
+            <div class="w-full text-center text-gray-700" data-aos="zoom-in"   data-aos-duration="1500"> We love what we do and we do it with passion.</div>
+            <div class="swiper mySwiper2 w-full mt-8" data-aos="zoom-in"   data-aos-duration="1500">
+                <div class="swiper-wrapper mb-10">
+                    <div class="swiper-slide">
+                        <div class="w-full relative">
+                            <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/team2.jpg"
+                                class="w-full" alt="">
+                            <div
+                                class="h-1/2 w-full bg-black text-center text-white z-10 content-end absolute bottom-0 left-0 flex flex-wrap">
+                                <div class="font-bold text-2xl w-full"> Amber Lee</div>
+                                <div class="w-full mb-5"> Graphic Designer </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-full relative">
+                            <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/team1.jpg"
+                                class="w-full" alt="">
+                            <div
+                                class="h-1/2 w-full bg-black text-center text-white z-10 content-end absolute bottom-0 left-0 flex flex-wrap">
+                                <div class="font-bold text-2xl w-full"> John Legend</div>
+                                <div class="w-full mb-5"> Co-founder </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-full relative">
+                            <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/team3.jpg"
+                                class="w-full" alt="">
+                            <div
+                                class="h-1/2 w-full bg-black text-center text-white z-10 content-end absolute bottom-0 left-0 flex flex-wrap">
+                                <div class="font-bold text-2xl w-full"> Aaron Ramsey</div>
+                                <div class="w-full mb-5"> Design Expert </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-full relative">
+                            <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/team2.jpg"
+                                class="w-full" alt="">
+                            <div
+                                class="h-1/2 w-full bg-black text-center text-white z-10 content-end absolute bottom-0 left-0 flex flex-wrap">
+                                <div class="font-bold text-2xl w-full"> Amber Lee</div>
+                                <div class="w-full mb-5"> Graphic Designer </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-full relative">
+                            <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/team1.jpg"
+                                class="w-full" alt="">
+                            <div
+                                class="h-1/2 w-full bg-black text-center text-white z-10 content-end absolute bottom-0 left-0 flex flex-wrap">
+                                <div class="font-bold text-2xl w-full"> John Legend</div>
+                                <div class="w-full mb-5"> Co-founder </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-full relative">
+                            <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/team3.jpg"
+                                class="w-full" alt="">
+                            <div
+                                class="h-1/2 w-full bg-black text-center text-white z-10 content-end absolute bottom-0 left-0 flex flex-wrap">
+                                <div class="font-bold text-2xl w-full"> Aaron Ramsey</div>
+                                <div class="w-full mb-5"> Design Expert </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" swiper-pagination "></div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="relative bg-cover overflow-hidden bg-[url('https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/parallax2-1.jpg')] ">
+        <div class="w-full h-full absolute top-0 left-0 bg-black bg-opacity-70 z-[0]"></div>
+        <div
+            class="max-w-screen-xl w-11/12 h-full p-10 mx-auto text-white  mx-auto flex flex-wrap pt-0 pb-0 items-center justify-between relative z-[1]">
+            <div class="md:w-7/12 w-full md:mt-0 mt-10">
+                <div class="w-full pr-12 text-4xl text-white font-bold" data-aos="fade-right" data-aos-duration="800">Subscribe your email for our
+                    Newsletter</div>
+                <div class="w-full relative mt-8" data-aos="fade-right"   data-aos-duration="800" data-aos-delay="300">
+                    <input type="text" class="rounded-full bg-transparent border-2 w-full h-12 pl-3 md:pr-60"
+                        placeholder="Email Address">
+                    <input type="submit"
+                        class="absolute right-0 md:top-0 top-full mt-3 md:mt-0 h-12 md:w-60 w-full flex justify-center items-center rounded-full bg-[#b09991] text-[#000000ba] font-bold text-xl ">
+                </div>
+            </div>
+            <div class="md:w-4/12 w-11/12 mx-auto md:mt-0 mt-16" data-aos-duration="800" data-aos-delay="300"  data-aos="fade-left">
+                <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/business-newsletter-man.png"
+                    class="w-full h-full pt-4" alt="">
+            </div>
+        </div>
+
+    </section>
+    <div class="w-full p-11 bg-[#f5f5f5]" id="projects"></div>
+    <section class="bg-[#f5f5f5] pb-20 w-full">
+        <div class="w-11/12 mx-auto max-w-screen-xl">
+            <div class="w-full font-bold text-4xl text-center"  data-aos="zoom-in-up"  data-aos-duration="1500"> Our projects</div>
+            <div class="w-full text-center text-gray-700"  data-aos="zoom-in-up"  data-aos-duration="1500">At Unfinity Plus Agency, we shows only the best websites
+            </div>
+
+
+            <div id="myBtnContainer" class="w-full flex mt-5 justify-center items-center" data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay="300">
+                <button class="btn btn-outline-success activecard m-1" onclick="filterSelection('all')"> All</button>
+                <button class="btn btn-outline-success m-1" onclick="filterSelection('Business')"> Business</button>
+                <button class="btn btn-outline-success m-1" onclick="filterSelection('Consulting')"> Consulting</button>
+                <button class="btn btn-outline-success m-1" onclick="filterSelection('Events')">Events</button>
+                <button class="btn btn-outline-success m-1" onclick="filterSelection('Finance')">Finance</button>
+            </div>
+
+            <div class="w-full flex flex-wrap"  data-aos="zoom-in-up"  data-aos-duration="1500"  data-aos-delay="300">
+                <div class=" p-5 filterDiv Consulting lg:w-3/12 md:w-6/12 w-full">
+                    <div class="">
+                        <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/h1-portfolio1.jpg"
+                            class="w-full" alt="">
+                    </div>
+                    <div class="w-full mt-1 bg-green-700 text-white text-center p-2">
+                        Consulting
+                    </div>
+                </div>
+                <div class=" p-5 filterDiv Business Events lg:w-3/12 md:w-6/12 w-full">
+                    <div class="">
+                        <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/h1-portfolio2.jpg"
+                            class="w-full" alt="">
+                    </div>
+                    <div class="w-full mt-1 bg-green-700 text-white text-center p-2">
+                        Business,Events
+                    </div>
+                </div>
+                <div class=" p-5 filterDiv Events lg:w-3/12 md:w-6/12 w-full">
+                    <div class="">
+                        <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/h1-portfolio3.jpg"
+                            class="w-full" alt="">
+                    </div>
+                    <div class="w-full mt-1 bg-green-700 text-white text-center p-2">
+                        Events
+                    </div>
+                </div>
+                <div class=" p-5 filterDiv Consulting lg:w-3/12 md:w-6/12 w-full">
+                    <div class="">
+                        <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/h1-portfolio4.jpg"
+                            class="w-full" alt="">
+                    </div>
+                    <div class="w-full mt-1 bg-green-700 text-white text-center p-2">
+                        Consulting
+                    </div>
+                </div>
+                <div class=" p-5 filterDiv Consulting Events lg:w-3/12 md:w-6/12 w-full">
+                    <div class="">
+                        <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/h1-portfolio5.jpg"
+                            class="w-full" alt="">
+                    </div>
+                    <div class="w-full mt-1 bg-green-700 text-white text-center p-2">
+                        Consulting,Events
+                    </div>
+                </div>
+                <div class=" p-5 filterDiv Business lg:w-3/12 md:w-6/12 w-full">
+                    <div class="">
+                        <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/h1-portfolio6.jpg"
+                            class="w-full" alt="">
+                    </div>
+                    <div class="w-full mt-1 bg-green-700 text-white text-center p-2">
+                        Business
+                    </div>
+                </div>
+                <div class=" p-5 filterDiv Finance Events lg:w-3/12 md:w-6/12 w-full">
+                    <div class="">
+                        <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/h1-portfolio7.jpg"
+                            class="w-full" alt="">
+                    </div>
+                    <div class="w-full mt-1 bg-green-700 text-white text-center p-2">
+                        Finance,Events
+                    </div>
+                </div>
+                <div class=" p-5 filterDiv Business lg:w-3/12 md:w-6/12 w-full">
+                    <div class="">
+                        <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/h1-portfolio8.jpg"
+                            class="w-full" alt="">
+                    </div>
+                    <div class="w-full mt-1 bg-green-700 text-white text-center p-2">
+                        Business
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="w-full p-11" id="testimonials"></div>
+    <section>
+        <div class="max-w-screen-xl mx-auto w-11/12 mb-20">
+            <div data-aos="zoom-in-up"  data-aos-duration="1000"  data-aos-delay="300">
+                <div class="w-full font-bold text-4xl text-center"> Clients’ Feedback</div>
+                <div class="w-full text-center text-gray-700">We focus on brands, products & campaigns </div>
+            </div>
+            <div class="mt-5" data-aos="zoom-in"  data-aos-duration="1000"  data-aos-delay="300">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-10">
+                            <div class="w-full">
+                                <div>
+                                    <i class="fa-solid fa-quote-left text-3xl text-[#b09991]"></i>
+                                </div>
+                                <div class="mt-3 mb-3">My project was a simple & small task, but the persistence and
+                                    determination of
+                                    Unfinity team turned it into an awesome and great project which make me very happy
+                                    with the result!</div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-14 ">
+                                    <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/testimonial1.jpg"
+                                        class="rounded-full w-full" alt="">
+                                </div>
+                                <div class="ml-4">
+                                    <div class="text-2xl">Monica Hall</div>
+                                    <div>CEO, Bream-Hall Partners</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-10">
+                            <div class="w-full">
+                                <div>
+                                    <i class="fa-solid fa-quote-left text-3xl text-[#b09991]"></i>
+                                </div>
+                                <div class="mt-3 mb-3">My project was a simple & small task, but the persistence and
+                                    determination of
+                                    Unfinity team turned it into an awesome and great project which make me very happy
+                                    with the result!</div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-14 ">
+                                    <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/testimonial1.jpg"
+                                        class="rounded-full w-full" alt="">
+                                </div>
+                                <div class="ml-4">
+                                    <div class="text-2xl">Monica Hall</div>
+                                    <div>CEO, Bream-Hall Partners</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-10">
+                            <div class="w-full">
+                                <div>
+                                    <i class="fa-solid fa-quote-left text-3xl text-[#b09991]"></i>
+                                </div>
+                                <div class="mt-3 mb-3">My project was a simple & small task, but the persistence and
+                                    determination of
+                                    Unfinity team turned it into an awesome and great project which make me very happy
+                                    with the result!</div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-14 ">
+                                    <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/testimonial1.jpg"
+                                        class="rounded-full w-full" alt="">
+                                </div>
+                                <div class="ml-4">
+                                    <div class="text-2xl">Monica Hall</div>
+                                    <div>CEO, Bream-Hall Partners</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#443f45]">
+        <div class="mx-auto w-11/12 max-w-screen-xl">
+            <div class="swiper mySwiper4 py-10">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img
+                            src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/client1.png"
+                            class="w-full" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/client2.png"
+                            class="w-full" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/client3.png"
+                            class="w-full" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/client4.png"
+                            class="w-full" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/client5.png"
+                            class="w-full" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/client1.png"
+                            class="w-full" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/client2.png"
+                            class="w-full" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/client3.png"
+                            class="w-full" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/client4.png"
+                            class="w-full" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/client5.png"
+                            class="w-full" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mx-auto max-w-screen-xl w-11/12 mt-20">
+            <div class="w-full font-bold text-4xl text-center" data-aos="zoom-in-up"  data-aos-duration="1000"  data-aos-delay="300"> Recent News</div>
+            <div class="w-6/12 mx-auto text-center text-gray-700" data-aos="zoom-in-up"  data-aos-duration="1000"  data-aos-delay="300">Follow our latest news and thoughts which focuses
+                exclusively on design, art, vintage, and also work updates.</div>
+            <div class="w-full mt-5 flex flex-wrap">
+                <div class="lg:w-4/12 md:w-6/12 w-full p-5" data-aos="zoom-in"  data-aos-duration="1000"  data-aos-delay="300">
+                    <div class="w-full border-2 group  h-full ">
+                        <div class="w-100  overflow-hidden ">
+                            <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/blog1-680x442.jpg"
+                                class="w-full group-hover:scale-110 transition-all duration-500" alt="">
+                        </div>
+                        <div class="w-full p-5">
+                            <div class="w-full text-gray-400">
+                                6 YEARS AGO
+                            </div>
+                            <div class="w-full text-2xl mt-3">
+                                Never Stop Believing Yourself
+                            </div>
+                            <div class="w-full text-gray-400 mt-7">
+                                Fusce vitae augue tortor. Integer ultrices vulputate nisl, nec suscipit leo aliquam
+                                vitae. Morbi est urna, tincidunt eget finibus eu, bibendum in…
+                            </div>
+                            <div class="w-full text-xl text-[#b09991] mt-5">Read More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-4/12 md:w-6/12 w-full p-5"  data-aos="zoom-in"  data-aos-duration="1000"  data-aos-delay="300">
+                    <div class="w-full border-2 group   ">
+                        <div class="w-100  overflow-hidden ">
+                            <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/blog2-680x442.jpg"
+                                class="w-full group-hover:scale-110 transition-all duration-500" alt="">
+                        </div>
+                        <div class="w-full p-5">
+                            <div class="w-full text-gray-400">
+                                6 YEARS AGO
+                            </div>
+                            <div class="w-full text-2xl mt-3">
+                                Nobody Knows What’s Gonna Happen
+                            </div>
+                            <div class="w-full text-gray-400 mt-7">
+                                Fusce vitae augue tortor. Integer ultrices vulputate nisl, nec suscipit leo aliquam
+                                vitae. Morbi est urna, tincidunt eget finibus eu, bibendum in…
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="text-xl text-[#b09991] mt-5">Read More</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-4/12 md:w-6/12 w-full p-5"  data-aos="zoom-in"  data-aos-duration="1000"  data-aos-delay="300">
+                    <div class="w-full border-2 group   ">
+                        <div class="w-100  overflow-hidden ">
+                            <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/blog3-680x442.jpg"
+                                class="w-full group-hover:scale-110 transition-all duration-500" alt="">
+                        </div>
+                        <div class="w-full p-5">
+                            <div class="w-full text-gray-400">
+                                6 YEARS AGO
+                            </div>
+                            <div class="w-full text-2xl mt-3">
+                                Always Have a Faith in Your Potential
+                            </div>
+                            <div class="w-full text-gray-400 mt-7">
+                                Fusce vitae augue tortor. Integer ultrices vulputate nisl, nec suscipit leo aliquam
+                                vitae. Morbi est urna, tincidunt eget finibus eu, bibendum in…
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="text-xl text-[#b09991] mt-5">Read More</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="w-full p-11" id="contact"></div>
+    <section
+        class="relative bg-cover bg-[url('https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/parallax3.jpg')]">
+        <div class="w-full h-full absolute top-0 left-0 bg-[#443f45e6]"></div>
+        <div class="w-11/12 mx-auto max-w-screen-xl py-10 relative z-10">
+            <div class="w-full flex flex-wrap ">
+                <div class="md:w-6/12 w-full p-5  "  data-aos="fade-right"  data-aos-duration="1000"  data-aos-delay="300">
+                    <div class="w-full ">
+                        <iframe loading="lazy" class="w-full h-[365px]"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1901.3979628072937!2d-0.0909319607537!3d51.5008068223728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760353d9b1edcd%3A0x51b99d4c8fe188f2!2sLondon%20Sport!5e0!3m2!1sen!2s!4v1609922984987!5m2!1sen!2s"
+                            frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div class="md:w-6/12 w-full p-5"  data-aos="fade-left"  data-aos-duration="1000"  data-aos-delay="300">
+                    <div class="w-full">
+                        <div class="w-full text-3xl font-bold text-white">
+                            Contact us
+                        </div>
+                        <div class="w-full text-[15px] mt-2 mb-3 text-white">
+                            Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incidi dunt
+                            ut labore et dolore magna aliqua.
+                        </div>
+                        <div class="w-full">
+                            <form class="w-full">
+
+                                <div class="w-full flex flex-wrap">
+                                    <div class="w-full md:w-6/12 md:pr-2 pr-0">
+                                        <input type="text" required class="w-full p-2 pl-5" placeholder="Full Name">
+                                    </div>
+                                    <div class="w-full md:w-6/12 md:pl-2 pl-0 mt-5 md:mt-0">
+                                        <input type="email" required class="w-full p-2 pl-5"
+                                            placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="w-full ">
+                                    <textarea class="w-full p-2 pl-5 mt-5" required placeholder="Message" rows="4"
+                                        aria-required="true" aria-invalid="false" placeholder="Message"
+                                        name="your-message"></textarea>
+                                </div>
+                                <div class="w-full">
+                                    <input type="submit" required class="mt-5 py-2 w-full text-white bg-[#b09991]">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="filter.js"></script>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function () {
+            var element = document.getElementById('elementToToggle');
+            element.classList.toggle('md:hidden');
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+        });
+        var swiper3 = new Swiper(".mySwiper3", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper4 = new Swiper(".mySwiper4", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            loop: true,
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                once: true  ,
+            }
+        );
+    </script>
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
+</body>
+
+</html>

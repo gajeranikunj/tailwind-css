@@ -1,0 +1,12 @@
+*{
+    scroll-behavior: smooth;
+}
+
+.filterDiv{
+    display: none;
+}
+.activecard{
+    background-color: green ;
+    padding: 5px;
+    color: white;
+}

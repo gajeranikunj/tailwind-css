@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blug</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.js"
+        integrity="sha512-bUju8VkXhCQgW7zCHSdiIDpECo/lqzChkKrKoc1v2PL2XqO/0Q2Y8dhu07+q6Rk+1c1xr6cfE0VZnumgwy93Ig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="https://demo.casethemes.net/unfinityplus/wp-content/themes/unfinityplus/assets/images/favicon.png" type="image/x-icon">
+    <!-- https://demo.casethemes.net/unfinityplus/ -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class=" h-24 bg-[#000] top-0 fixed z-40   border-gray-200 dark:bg-gray-900 w-full">
+        <div
+            class="max-w-screen-xl h-full flex flex-wrap items-center justify-between mx-auto p-2 sm:p-0 sm:w-11/12 relative">
+            <a href="#" class="flex items-center space-x-3 absolute top-11  rtl:space-x-reverse w-36 ">
+                <img src="https://demo.casethemes.net/unfinityplus/wp-content/themes/unfinityplus/assets/images/logo-light.png"
+                    class="w-full mx-auto" alt="Flowbite Logo" />
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center  w-10 h-10  justify-center absolute top-8 right-0 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full absolute inset-y-1/2 top-full md:top-9 right-0 md:block md:w-auto md:mt-0 "
+                id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 drop-shadow-md bg-white md:bg-black md:p-0 mt-4 md:flex-row md:space-x-5 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li class="md:order-[1] order-[2]">
+                        <a href="./index.html#home"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-300 md:p-0 dark:text-white md:dark:text-blue-500">Home</a>
+                    </li>
+                    <li class="md:order-[2] order-[3]">
+                        <a href="./index.html#Services"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                    </li>
+                    <li class="md:order-[3] order-[4]">
+                        <a href="./index.html#About"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <li class="md:order-[4] order-[5]">
+                        <a href="./index.html#projects"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">projects</a>
+                    </li>
+                    <li class="md:order-[5] order-[6]">
+                        <a href="./index.html#testimonials"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">testimonials</a>
+                    </li>
+                    <li class="md:order-[6] order-[7]">
+                        <a href="#"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">blog</a>
+                    </li>
+                    <li class="md:order-[7] order-[8]">
+                        <a href="./index.html#contact"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">contact</a>
+                    </li>
+                    <li class="md:order-[8] order-[9]">
+                        <a href="./shop.html#shop"
+                            class="block py-2 px-3 text-black md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">shop</a>
+                    </li>
+                    <li class="md:order-[9] order-[1]">
+                        <div class="relative">
+                            <button id="toggleButton" class="md:block hidden   text-white font-bold">
+                                <i class="md:hover:text-gray-300 fas fa-search"></i>
+                            </button>
+                            <input type="text"
+                                class="h-8 pl-2 w-full md:w-52 md:hidden  block md:mb-0 mb-2 md:absolute top-full right-0 border-2"
+                                placeholder="search..." id="elementToToggle">
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="w-full mt-28">
+        <div class="w-11/12 mx-auto flex flex-wrap max-w-screen-xl">
+            <div class="w-full text-center font-bold text-5xl mb-10">Blog</div>
+            <div class="p-5 w-full md:w-6/12 order-1">
+                <div class="w-full">
+                    <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/blog1-768x411.jpg"
+                        class="w-full" alt="">
+                </div>
+            </div>
+            <div class="p-5 w-full md:w-6/12 order-2">
+                <div class="w-full font-bold text-3xl text-center">Never Stop Believing Yourself</div>
+                <div class="w-full text-center text-gray-400">by: Emma Stone</div>
+                <div class="w-full mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa vero,
+                    amet nisi explicabo doloremque vitae itaque dolorem minima accusamus dicta officiis aliquid eos
+                    accusantium id consectetur autem porro magni.</div>
+                <div class="w-full mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa vero,
+                    amet nisi explicabo doloremque vitae itaque dolorem minima accusamus dicta officiis aliquid eos
+                    accusantium id consectetur autem porro magni.</div>
+                <div class="w-full mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa vero,
+                    amet nisi explicabo doloremque vitae itaque dolorem minima accusamus dicta officiis aliquid eos
+                    accusantium id consectetur autem porro magni.</div>
+            </div>
+            <div class="p-5 w-full md:w-6/12 order-4 md:order-3">
+                <div class="w-full font-bold text-3xl text-center">Nobody Knows What’s Gonna Happen</div>
+                <div class="w-full text-center text-gray-400">by: Emma Stone</div>
+                <div class="w-full mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa vero,
+                    amet nisi explicabo doloremque vitae itaque dolorem minima accusamus dicta officiis aliquid eos
+                    accusantium id consectetur autem porro magni.</div>
+                <div class="w-full mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa vero,
+                    amet nisi explicabo doloremque vitae itaque dolorem minima accusamus dicta officiis aliquid eos
+                    accusantium id consectetur autem porro magni.</div>
+                <div class="w-full mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa vero,
+                    amet nisi explicabo doloremque vitae itaque dolorem minima accusamus dicta officiis aliquid eos
+                    accusantium id consectetur autem porro magni.</div>
+            </div>
+            <div class="p-5 w-full md:w-6/12 order-3 md:order-4">
+                <div class="w-full">
+                    <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/blog2-768x411.jpg"
+                        class="w-full" alt="">
+                </div>
+            </div>
+            <div class="p-5 w-full md:w-6/12 order-5">
+                <div class="w-full">
+                    <img src="https://demo.casethemes.net/unfinityplus/wp-content/uploads/2018/07/blog3-768x411.jpg"
+                        class="w-full" alt="">
+                </div>
+            </div>
+            <div class="p-5 w-full md:w-6/12 order-6">
+                <div class="w-full font-bold text-3xl text-center">Always Have a Faith in Your Potential</div>
+                <div class="w-full text-center text-gray-400">by: Emma Stone</div>
+                <div class="w-full mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa vero,
+                    amet nisi explicabo doloremque vitae itaque dolorem minima accusamus dicta officiis aliquid eos
+                    accusantium id consectetur autem porro magni.</div>
+                <div class="w-full mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa vero,
+                    amet nisi explicabo doloremque vitae itaque dolorem minima accusamus dicta officiis aliquid eos
+                    accusantium id consectetur autem porro magni.</div>
+                <div class="w-full mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa vero,
+                    amet nisi explicabo doloremque vitae itaque dolorem minima accusamus dicta officiis aliquid eos
+                    accusantium id consectetur autem porro magni.</div>
+            </div>
+        </div>
+    </section>
+    <script src="filter.js"></script>
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function () {
+            var element = document.getElementById('elementToToggle');
+            element.classList.toggle('md:hidden');
+        });
+
+    </script>
+</body>
+
+</html>
